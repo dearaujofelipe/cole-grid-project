@@ -1,10 +1,14 @@
 body {
-  font-family: 'Poppings', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project {
-  margin-top: 300px;
-  width: 500px;
+  /* width: 500px; */
   position: relative;
 }
 
