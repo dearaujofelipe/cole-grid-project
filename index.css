@@ -2,20 +2,27 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 64px;
+  padding: 64px 0px;
 }
 
 .navbar .left {
   font-size: 32px;
   font-weight: bold;
+  /* border: 1px solid black; */
 }
 
 .navbar .right {
   width: 400px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,8 +56,6 @@ body {
   column-gap: 16px; */
   grid-gap: 16px;
   width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
 }
 
 .project {
@@ -126,7 +131,15 @@ body {
   color: white;
 }
 
+.footer {
+  text-align: center;
+  padding: 64px;
+}
+
 @media only screen and (max-width: 1100px) {
+  .container {
+    max-width: 100%;
+  }
   .project-grid {
     max-width: 100%;
     grid-template-areas:
@@ -144,6 +157,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 32px;
+  }
   .project-grid {
     max-width: 100%;
     grid-template-areas:
